@@ -1,0 +1,23 @@
+{
+  "name": "cantus",
+  "version": "1.0.0",
+  "description": "🍬 A website built with CSS Grid Layout &amp; Sass only.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardomso/cantus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardomso/cantus/issues"
+  },
+  "homepage": "https://github.com/leonardomso/cantus#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
