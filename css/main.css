@@ -23,10 +23,18 @@ body {
         grid-column: 1 / 2;
         font-size: 8vw; }
     .menu .logo {
-      grid-column: 2 / 3; }
+      grid-column: 2 / 3;
+      justify-self: center;
+      align-self: center; }
     .menu ul {
       display: none;
       align-self: center;
-      justify-self: center; } }
+      justify-self: center; }
+
+  .slider {
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+    margin: 0;
+    background-color: blue; } }
 
 /*# sourceMappingURL=main.css.map */
