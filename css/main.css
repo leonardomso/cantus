@@ -1,3 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes|Lato:300,400,700|Roboto:300,400,500");
+* {
+  margin: 0;
+  padding: 0; }
 
+.menu {
+  width: 100vw;
+  height: 12vh;
+  background-color: #DF001F;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center; }
+  .menu .fa {
+    font-size: 2rem;
+    color: #FFFFFF; }
+  .menu .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover; }
+    .menu .logo .logo-title {
+      font-family: "Great Vibes", cursive;
+      color: #FFFFFF;
+      font-size: 3rem;
+      text-align: center; }
+  .menu .navigation {
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+    .menu .navigation li {
+      display: none; }
+  .menu .social-medias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    align-items: center; }
 
 /*# sourceMappingURL=main.css.map */

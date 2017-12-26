@@ -1,0 +1,43 @@
+.menu {
+    width: 100vw;
+    height: 12vh;
+    background-color: $main-red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+
+    .fa {
+        font-size: 2rem;
+        color: $white;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+
+        .logo-title {
+            font-family: $ff-great;
+            color: $white;
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        li {
+            display: none;
+        }
+    }
+
+    .social-medias {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        align-items: center;
+    }
+}
