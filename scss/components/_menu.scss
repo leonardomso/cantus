@@ -6,11 +6,6 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
 
-    .fa {
-        font-size: 2rem;
-        color: $white;
-    }
-
     .logo {
         display: flex;
         align-items: center;
@@ -30,40 +25,65 @@
         align-content: center;
         justify-content: center;
 
+        .fa {
+            font-size: 2rem;
+            color: $white;
+
+            @media screen and (min-width: 1100px) {
+                display: none;
+            }
+        }
+
         li {
             display: none;
+
+            @media screen and (min-width: 1100px) {
+                display: inline-block;
+                padding-left: 0.9em;
+                font-size: 0.9rem;
+                font-family: $ff-lato;
+                color: $white;
+            }
         }
     }
 
     .social-medias {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 2fr;
-        align-items: center;
 
-        .facebook,
-        .twitter,
-        .gplus {
+        @media screen and (min-width: 300px) {
+            display: none;
+        }
 
-            p {
+        @media screean and (min-width: 1100px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr;
+            align-items: center;
+            max-width: 85%;
+            justify-self: center;
+
+            .facebook,
+            .twitter,
+            .gplus {
+                p {
+                    font-family: $ff-lato;
+                    color: $white;
+                    display: inline-block;
+                    margin-left: 1em;
+                }
+
+                .fa {
+                    font-size: 1rem;
+                }
+            }
+
+            button {
+                width: 12vw;
+                height: 9vh;
+                padding: 1em;
+                background-color: $white;
                 font-family: $ff-lato;
-                color: $white;
-                display: inline-block;
-                margin-left: 1em;
+                color: $main-red;
+                border-radius: 3em;
             }
-
-            .fa {
-                font-size: 1rem;
-            }
-        }
-
-        button {
-            width: 12vw;
-            height: 9vh;
-            padding: 1em;
-            background-color: $white;
-            font-family: $ff-lato;
-            color: $main-red;
-            border-radius: 3em;
-        }
+        }        
     }
 }
