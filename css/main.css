@@ -33,5 +33,24 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     align-items: center; }
+    .menu .social-medias .facebook p,
+    .menu .social-medias .twitter p,
+    .menu .social-medias .gplus p {
+      font-family: "Lato", sans-serif;
+      color: #FFFFFF;
+      display: inline-block;
+      margin-left: 1em; }
+    .menu .social-medias .facebook .fa,
+    .menu .social-medias .twitter .fa,
+    .menu .social-medias .gplus .fa {
+      font-size: 1rem; }
+    .menu .social-medias button {
+      width: 12vw;
+      height: 9vh;
+      padding: 1em;
+      background-color: #FFFFFF;
+      font-family: "Lato", sans-serif;
+      color: #DF001F;
+      border-radius: 3em; }
 
 /*# sourceMappingURL=main.css.map */

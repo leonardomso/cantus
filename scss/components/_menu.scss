@@ -39,5 +39,31 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 2fr;
         align-items: center;
+
+        .facebook,
+        .twitter,
+        .gplus {
+
+            p {
+                font-family: $ff-lato;
+                color: $white;
+                display: inline-block;
+                margin-left: 1em;
+            }
+
+            .fa {
+                font-size: 1rem;
+            }
+        }
+
+        button {
+            width: 12vw;
+            height: 9vh;
+            padding: 1em;
+            background-color: $white;
+            font-family: $ff-lato;
+            color: $main-red;
+            border-radius: 3em;
+        }
     }
 }
