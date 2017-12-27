@@ -8,7 +8,7 @@
   height: 12vh;
   background-color: #DF001F;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr 2fr;
   align-items: center; }
   .menu .logo {
     display: flex;
@@ -55,17 +55,21 @@
         font-family: "Lato", sans-serif;
         color: #FFFFFF;
         display: inline-block;
-        margin-left: 1em; }
+        margin-left: 1em;
+        font-size: .8rem; }
       .menu .social-medias .facebook .fa,
       .menu .social-medias .twitter .fa,
       .menu .social-medias .gplus .fa {
-        font-size: 1rem; }
-      .menu .social-medias button {
+        font-size: 1rem;
+        color: #FFFFFF; }
+      .menu .social-medias .purchase-text {
         width: 12vw;
-        height: 9vh;
+        height: 7vh;
         padding: 1em;
         background-color: #FFFFFF;
         font-family: "Lato", sans-serif;
+        font-size: .8rem;
+        font-weight: 900;
         color: #DF001F;
         border-radius: 3em; } }
 
