@@ -3,6 +3,15 @@
   margin: 0;
   padding: 0; }
 
+button {
+  padding: 1.2em;
+  background-color: #FFFFFF;
+  font-family: "Lato", sans-serif;
+  font-size: .8rem;
+  font-weight: 900;
+  color: #DF001F;
+  border-radius: 3em; }
+
 .menu {
   width: 100vw;
   height: 12vh;
@@ -63,14 +72,28 @@
         font-size: 1rem;
         color: #FFFFFF; }
       .menu .social-medias .purchase-text {
-        width: 12vw;
-        height: 7vh;
-        padding: 1em;
-        background-color: #FFFFFF;
-        font-family: "Lato", sans-serif;
-        font-size: .8rem;
-        font-weight: 900;
-        color: #DF001F;
-        border-radius: 3em; } }
+        margin-left: 1em; } }
+
+.discover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("photo-guitar.jpeg");
+  background-position: center; }
+  .discover h1 {
+    color: #DF001F;
+    font-size: 3.5rem;
+    font-weight: bold; }
+  .discover p {
+    color: #333333;
+    font-size: 2.5rem;
+    font-family: "Great Vibes", cursive; }
+  .discover .discover-button {
+    width: 15em;
+    margin-top: 2em;
+    color: #FFFFFF;
+    background-color: #DF001F; }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,3 +3,13 @@
 $ff-lato: 'Lato', sans-serif;
 $ff-roboto: 'Roboto', sans-serif;
 $ff-great: 'Great Vibes', cursive;
+
+button {
+    padding: 1.2em;
+    background-color: $white;
+    font-family: $ff-lato;
+    font-size: .8rem;
+    font-weight: 900;
+    color: $main-red;
+    border-radius: 3em;
+}

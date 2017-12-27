@@ -1,0 +1,28 @@
+.discover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('photo-guitar.jpeg');
+    background-position: center;
+
+    h1 {
+        color: $main-red;
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+
+    p {
+        color: $main-gray;
+        font-size: 2.5rem;
+        font-family: $ff-great;
+    }
+
+    .discover-button {
+        width: 15em;
+        margin-top: 2em;
+        color: $white;
+        background-color: $main-red;
+    }
+}
