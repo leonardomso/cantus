@@ -79,15 +79,16 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-image: url("photo-guitar.jpeg");
+  height: 80vh;
+  background-image: url("../images/photo-guitar.jpeg");
+  background-size: cover;
   background-position: center; }
   .discover h1 {
     color: #DF001F;
     font-size: 3.5rem;
     font-weight: bold; }
   .discover p {
-    color: #333333;
+    color: #FFFFFF;
     font-size: 2.5rem;
     font-family: "Great Vibes", cursive; }
   .discover .discover-button {
