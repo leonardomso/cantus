@@ -98,4 +98,45 @@ button {
     color: #FFFFFF;
     background-color: #DF001F; }
 
+.members {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  max-width: 75%;
+  margin: 0 auto;
+  margin-top: 2.5em; }
+  .members h1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: #333333;
+    font-size: 2.5rem;
+    font-family: "Lato", sans-serif; }
+  .members p {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 1.5em;
+    color: #DF001F;
+    font-size: 2rem;
+    font-family: "Great Vibes", cursive; }
+  .members .vocal {
+    background-image: url("../images/vocal.jpg");
+    background-size: cover;
+    background-position: center; }
+  .members .drum {
+    background-image: url("../images/drum.jpg");
+    background-size: cover;
+    background-position: center; }
+  .members .guiter {
+    background-image: url("../images/guiter.jpg");
+    background-size: cover;
+    background-position: center; }
+
+@media screen and (min-width: 300px) {
+  .members {
+    grid-template-columns: 1fr; } }
+@media screen and (min-width: 620px) {
+  .members {
+    grid-template-columns: repeat(2, 1fr); } }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,60 @@
+.members {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 2.5em;
+
+    h1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        color: $main-gray;
+        font-size: 2.5rem;
+        font-family: $ff-lato;
+    }
+
+    p {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-top: 1.5em;
+        color: $main-red;
+        font-size: 2rem;
+        font-family: $ff-great;
+    }
+
+    .vocal {
+        background-image: url('../images/vocal.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .drum {
+        background-image: url('../images/drum.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .guiter {
+        background-image: url('../images/guiter.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .members {
+        grid-template-columns: 1fr;
+
+        .vocal {
+
+        }
+    }
+}
+
+@media screen and (min-width: 620px) {
+    .members {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
