@@ -1,8 +1,7 @@
 .members {
     display: grid;
     grid-template-rows: 1fr 4fr;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
+    grid-gap: 1em;
     max-width: 75%;
     margin: 0 auto;
     margin-top: 2.5em;
@@ -30,7 +29,7 @@
     .members {
         grid-template-columns: 1fr;
 
-        .set {
+        .set-members {
             display: none;
         }
     }
@@ -39,25 +38,6 @@
 @media screen and (min-width: 620px) {
     .members {
         grid-template-columns: repeat(2, 1fr);
-
-        .set {
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-
-            .set-left,
-            .set-right {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: $main-red;
-                width: 4.5vw;
-                height: 5.5vh;
-                font-size: 1.5em;
-                margin-left: 0.1em;
-                color: $white;
-            }
-        }
 
         .vocal {
             grid-column: 1 / 2;
@@ -79,7 +59,7 @@
     .members {
         grid-template-columns: repeat(3, 1fr);
 
-        .set {
+        .set-members {
             grid-column: 3 / 4;
         }
 
