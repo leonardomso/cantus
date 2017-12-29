@@ -24,6 +24,12 @@
         }
     }
 
+    .video-player {
+        background-image: url('../images/video-photo.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
     .date-consert {
         display: flex;
         justify-content: center;
@@ -55,11 +61,6 @@
 @media screen and (min-width: 940px) {
     .conserts {
         grid-template-columns: 1fr 2fr 2fr;
-
-        .set-video {
-            grid-column: 3 / 4;
-            grid-row: 1 / 2;
-        }
 
         .date-consert {
             grid-column: 1 / 2;

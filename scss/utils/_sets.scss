@@ -16,3 +16,18 @@
         color: $white;
     }
 }
+
+@media screen and (min-width: 300px) {
+    .set-members,
+    .set-video {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .set-members,
+    .set-video {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+}
