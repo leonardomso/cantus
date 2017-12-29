@@ -1,0 +1,13 @@
+.conserts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 3fr;
+    max-width: 75%;
+    margin: 3em auto;
+}
+
+@media screen and (min-width: 300px) {
+    .conserts {
+        grid-template-columns: 1fr;
+    }
+}

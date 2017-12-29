@@ -14,3 +14,20 @@ button {
     border-radius: 3em;
     border: none;
 }
+
+.title-column {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: $main-gray;
+    font-size: 2.5rem;
+    font-family: $ff-lato;
+}
+
+.subtitle-column {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 1.5em;
+    color: $main-red;
+    font-size: 2rem;
+    font-family: $ff-great;
+}

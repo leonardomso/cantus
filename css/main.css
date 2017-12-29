@@ -13,6 +13,21 @@ button {
   border-radius: 3em;
   border: none; }
 
+.title-column {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  color: #333333;
+  font-size: 2.5rem;
+  font-family: "Lato", sans-serif; }
+
+.subtitle-column {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-top: 1.5em;
+  color: #DF001F;
+  font-size: 2rem;
+  font-family: "Great Vibes", cursive; }
+
 .menu {
   width: 100vw;
   height: 12vh;
@@ -106,19 +121,6 @@ button {
   max-width: 75%;
   margin: 0 auto;
   margin-top: 2.5em; }
-  .members h1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    color: #333333;
-    font-size: 2.5rem;
-    font-family: "Lato", sans-serif; }
-  .members p {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    margin-top: 1.5em;
-    color: #DF001F;
-    font-size: 2rem;
-    font-family: "Great Vibes", cursive; }
   .members .vocal {
     background-image: url("../images/vocal.jpg");
     background-size: cover;
@@ -134,9 +136,59 @@ button {
 
 @media screen and (min-width: 300px) {
   .members {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+    .members .set {
+      display: none; } }
 @media screen and (min-width: 620px) {
   .members {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+    .members .set {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end; }
+      .members .set .set-left,
+      .members .set .set-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #DF001F;
+        width: 4.5vw;
+        height: 5.5vh;
+        font-size: 1.5em;
+        margin-left: 0.1em;
+        color: #FFFFFF; }
+    .members .vocal {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3; }
+    .members .drum {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3; }
+    .members .guiter {
+      display: none; } }
+@media screen and (min-width: 940px) {
+  .members {
+    grid-template-columns: repeat(3, 1fr); }
+    .members .set {
+      grid-column: 3 / 4; }
+    .members .vocal {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3; }
+    .members .drum {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3; }
+    .members .guiter {
+      display: block;
+      grid-column: 3 / 4;
+      grid-row: 2 / 3; } }
+.conserts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 3fr;
+  max-width: 75%;
+  margin: 3em auto; }
+
+@media screen and (min-width: 300px) {
+  .conserts {
+    grid-template-columns: 1fr; } }
 
 /*# sourceMappingURL=main.css.map */
