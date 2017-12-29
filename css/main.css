@@ -10,7 +10,8 @@ button {
   font-size: .8rem;
   font-weight: 900;
   color: #DF001F;
-  border-radius: 3em; }
+  border-radius: 3em;
+  border: none; }
 
 .menu {
   width: 100vw;
