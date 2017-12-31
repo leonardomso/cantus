@@ -1,0 +1,25 @@
+.popular-instagram {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 3em;
+
+    .subtitle-column {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .popular-instagram {
+        .title-song {
+            font-size: 0.8rem;
+            font-family: $ff-lato;
+            margin-top: 2em;
+        }
+
+        .instagram {
+            margin-top: 3em;
+        }
+    }
+}
