@@ -218,6 +218,33 @@ button {
       display: block;
       grid-column: 3 / 4;
       justify-content: flex-end; } }
+.founder {
+  display: grid;
+  max-width: 75%;
+  height: 40vh;
+  margin: 0 auto;
+  background-image: url("../images/founder-photo.jpg");
+  background-position: center;
+  background-size: cover; }
+  .founder h1,
+  .founder p {
+    color: #FFFFFF;
+    font-family: "Lato", sans-serif; }
+  .founder button {
+    width: 15em; }
+  .founder .founder-history {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    margin-left: 1em; }
+
+@media screen and (min-width: 300px) {
+  .founder h1 {
+    font-size: 1.5rem; }
+  .founder p {
+    font-size: 0.8rem;
+    margin-top: 1em; } }
 .set {
   display: flex;
   justify-content: flex-end;
