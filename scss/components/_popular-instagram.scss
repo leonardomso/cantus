@@ -1,8 +1,8 @@
 .popular-instagram {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 3fr 1fr;
     max-width: 75%;
-    height: 45vh;
+    height: 55vh;
     margin: 0 auto;
     margin-top: 3em;
 
@@ -20,8 +20,9 @@
 
     figure {
         width: 7em;
-        height: 7em;
+        height: 6em;
         margin-top: 1em;
+        justify-self: center;
     }
 
     .john-towner {
@@ -54,7 +55,7 @@
         .instagram {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: auto 1fr 1fr;
             margin-top: 3em;
 
             .title-column,
@@ -66,7 +67,7 @@
     }
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 540px) {
     .popular-instagram {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
