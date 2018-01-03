@@ -2,7 +2,6 @@
     display: grid;
     grid-template-rows: 3fr 1fr;
     max-width: 75%;
-    height: 55vh;
     margin: 0 auto;
     margin-top: 3em;
 
@@ -24,40 +23,19 @@
         margin-top: 1em;
         justify-self: center;
     }
-
-    .john-towner {
-        background-image: url('../images/john-towner.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .mountain {
-        background-image: url('../images/mountain.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .wild {
-        background-image: url('../images/wild.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .vacation {
-        background-image: url('../images/vacation.jpg');
-        background-size: cover;
-        background-position: center;
-    }
 }
 
 @media screen and (min-width: 300px) {
     .popular-instagram {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
         .instagram {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: auto 1fr 1fr;
-            margin-top: 3em;
-
+            grid-row: 2 / 3;
+            
             .title-column,
             .subtitle-column {
                 grid-column: 1 / 3;
@@ -74,6 +52,7 @@
 
         .instagram {
             grid-column: 2 / 3;
+            grid-row: 1 / 2;
             margin-top: 0;
         }
     }

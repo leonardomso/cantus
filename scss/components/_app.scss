@@ -1,1 +1,37 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 75%;
+    height: 30vh;
+    background-image: url('../images/app-photo.jpg');
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 3em;
 
+    p {
+        font-size: 3vw;
+        font-family: $ff-lato;
+        color: $white;
+        margin-top: 1em;
+    }
+
+    h1 {
+        font-size: 4vw;
+        font-family: $ff-lato;
+        color: $white;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .app {
+        h1 {
+            font-size: 3vw;
+        }
+
+        p {
+            font-size: 2vw;
+        }
+    }
+}

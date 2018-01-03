@@ -249,7 +249,6 @@ button {
   display: grid;
   grid-template-rows: 3fr 1fr;
   max-width: 75%;
-  height: 55vh;
   margin: 0 auto;
   margin-top: 3em; }
   .popular-instagram .popular-songs .subtitle-column {
@@ -263,40 +262,54 @@ button {
     height: 6em;
     margin-top: 1em;
     justify-self: center; }
-  .popular-instagram .john-towner {
-    background-image: url("../images/john-towner.jpg");
-    background-size: cover;
-    background-position: center; }
-  .popular-instagram .mountain {
-    background-image: url("../images/mountain.jpg");
-    background-size: cover;
-    background-position: center; }
-  .popular-instagram .wild {
-    background-image: url("../images/wild.jpg");
-    background-size: cover;
-    background-position: center; }
-  .popular-instagram .vacation {
-    background-image: url("../images/vacation.jpg");
-    background-size: cover;
-    background-position: center; }
 
 @media screen and (min-width: 300px) {
-  .popular-instagram .instagram {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto 1fr 1fr;
-    margin-top: 3em; }
-    .popular-instagram .instagram .title-column,
-    .popular-instagram .instagram .subtitle-column {
-      grid-column: 1 / 3;
-      grid-row: 1 / 2; } }
+  .popular-instagram {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; }
+    .popular-instagram .instagram {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto 1fr 1fr;
+      grid-row: 2 / 3; }
+      .popular-instagram .instagram .title-column,
+      .popular-instagram .instagram .subtitle-column {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2; } }
 @media screen and (min-width: 540px) {
   .popular-instagram {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr; }
     .popular-instagram .instagram {
       grid-column: 2 / 3;
+      grid-row: 1 / 2;
       margin-top: 0; } }
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 75%;
+  height: 30vh;
+  background-image: url("../images/app-photo.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 3em; }
+  .app p {
+    font-size: 3vw;
+    font-family: "Lato", sans-serif;
+    color: #FFFFFF;
+    margin-top: 1em; }
+  .app h1 {
+    font-size: 4vw;
+    font-family: "Lato", sans-serif;
+    color: #FFFFFF; }
+
+@media screen and (min-width: 700px) {
+  .app h1 {
+    font-size: 3vw; }
+  .app p {
+    font-size: 2vw; } }
 .set {
   display: flex;
   justify-content: flex-end;
@@ -322,5 +335,37 @@ button {
   .set-video {
     grid-column: 3 / 4;
     grid-row: 1 / 2; } }
+.john-towner {
+  background-image: url("../images/john-towner.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.mountain {
+  background-image: url("../images/mountain.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.wild {
+  background-image: url("../images/wild.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.vacation {
+  background-image: url("../images/vacation.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.app-store,
+.play-store {
+  width: 21%;
+  height: 24%; }
+
+.app-store {
+  background-image: url("../images/app-store-button.jpg");
+  background-size: cover; }
+
+.play-store {
+  background-image: url("../images/google-play-button.jpg");
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

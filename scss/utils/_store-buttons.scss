@@ -1,0 +1,15 @@
+.app-store,
+.play-store {
+    width: 21%;
+    height: 24%;
+}
+
+.app-store {
+    background-image: url('../images/app-store-button.jpg');
+    background-size: cover;
+}
+
+.play-store {
+    background-image: url('../images/google-play-button.jpg');
+    background-size: cover;
+}
