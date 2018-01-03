@@ -1,0 +1,22 @@
+.subscribe {
+    display: grid;
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 3em;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 2vw;
+        color: $main-gray;
+
+        &::after {
+            content: '';
+            height: 4px;
+            width: 100%;
+            margin-top: 0.3em;
+            background-color: $main-gray;
+            display: block;
+        }
+    }
+}

@@ -310,6 +310,24 @@ button {
     font-size: 3vw; }
   .app p {
     font-size: 2vw; } }
+.subscribe {
+  display: grid;
+  max-width: 75%;
+  margin: 0 auto;
+  margin-top: 3em;
+  align-items: center;
+  justify-content: center; }
+  .subscribe h1 {
+    font-size: 2vw;
+    color: #333333; }
+    .subscribe h1::after {
+      content: '';
+      height: 4px;
+      width: 100%;
+      margin-top: 0.3em;
+      background-color: #333333;
+      display: block; }
+
 .set {
   display: flex;
   justify-content: flex-end;
