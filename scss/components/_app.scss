@@ -8,7 +8,7 @@
     background-image: url('../images/app-photo.jpg');
     background-size: cover;
     margin: 0 auto;
-    margin-top: 3em;
+    margin-top: 2em;
 
     p {
         font-size: 3vw;
@@ -24,14 +24,20 @@
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 300px) {
     .app {
         h1 {
-            font-size: 3vw;
+            font-size: calc(14px + (20 - 14) * (100vw - 300px) / (700 - 300));
         }
 
         p {
-            font-size: 2vw;
+            text-align: center;
+            font-size: calc(10px + (12 - 10) * (100vw - 300px) / (700 - 300));
+            // min-fs + (max-fs - min-fs) * (100vw - min-ss) / (max-ss - min-ss)
+            // min-fs = min-font-size;
+            // max-fs = max-font-size;
+            // min-ss = min-screen-size;
+            // max-ss = max-screen-size;
         }
     }
 }

@@ -294,7 +294,7 @@ button {
   background-image: url("../images/app-photo.jpg");
   background-size: cover;
   margin: 0 auto;
-  margin-top: 3em; }
+  margin-top: 2em; }
   .app p {
     font-size: 3vw;
     font-family: "Lato", sans-serif;
@@ -305,11 +305,12 @@ button {
     font-family: "Lato", sans-serif;
     color: #FFFFFF; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 300px) {
   .app h1 {
-    font-size: 3vw; }
+    font-size: calc(14px + (20 - 14) * (100vw - 300px) / (700 - 300)); }
   .app p {
-    font-size: 2vw; } }
+    text-align: center;
+    font-size: calc(10px + (12 - 10) * (100vw - 300px) / (700 - 300)); } }
 .subscribe {
   display: grid;
   max-width: 75%;
@@ -327,6 +328,12 @@ button {
       margin-top: 0.3em;
       background-color: #333333;
       display: block; }
+
+@media screen and (min-width: 300px) {
+  .subscribe h1 {
+    font-size: calc(16px + (20 - 16) * (100vw - 300px) / (640 - 300)); } }
+.footer-cantus .footer-navigation {
+  display: none; }
 
 .set {
   display: flex;
