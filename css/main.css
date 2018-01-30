@@ -55,47 +55,57 @@ button {
     display: flex;
     align-content: center;
     justify-content: center; }
+    .menu .navigation .no-justify {
+      justify-content: flex-end; }
     .menu .navigation .fa {
       font-size: 2rem;
       color: #FFFFFF; }
-      @media screen and (min-width: 1100px) {
-        .menu .navigation .fa {
-          display: none; } }
-    .menu .navigation li {
-      display: none; }
-      @media screen and (min-width: 1100px) {
-        .menu .navigation li {
-          display: inline-block;
-          padding-left: 0.9em;
-          font-size: 0.9rem;
-          font-family: "Lato", sans-serif;
-          color: #FFFFFF; } }
+    .menu .navigation ul {
+      list-style: none;
+      display: flex;
+      position: absolute;
+      margin-left: -44px;
+      flex-direction: column;
+      font-size: 1rem;
+      font-family: "Lato", sans-serif; }
+      .menu .navigation ul li {
+        padding: 10px; }
   @media screen and (min-width: 300px) {
     .menu .social-medias {
       display: none; } }
-  @media screen and (min-width: 1100px) {
-    .menu .social-medias {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 2fr;
-      align-items: center;
-      max-width: 85%;
-      justify-self: center; }
-      .menu .social-medias .facebook p,
-      .menu .social-medias .twitter p,
-      .menu .social-medias .gplus p {
-        font-family: "Lato", sans-serif;
-        color: #FFFFFF;
-        display: inline-block;
-        margin-left: 1em;
-        font-size: .8rem; }
-      .menu .social-medias .facebook .fa,
-      .menu .social-medias .twitter .fa,
-      .menu .social-medias .gplus .fa {
-        font-size: 1rem;
-        color: #FFFFFF; }
-      .menu .social-medias .purchase-text {
-        margin-left: 1em; } }
 
+@media screen and (min-width: 1100px) {
+  li {
+    display: inline-block;
+    padding-left: 0.9em;
+    font-size: 0.9rem;
+    font-family: "Lato", sans-serif;
+    color: #FFFFFF; }
+
+  .fa {
+    display: none; }
+
+  .social-medias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    align-items: center;
+    max-width: 85%;
+    justify-self: center; }
+    .social-medias .facebook p,
+    .social-medias .twitter p,
+    .social-medias .gplus p {
+      font-family: "Lato", sans-serif;
+      color: #FFFFFF;
+      display: inline-block;
+      margin-left: 1em;
+      font-size: .8rem; }
+    .social-medias .facebook .fa,
+    .social-medias .twitter .fa,
+    .social-medias .gplus .fa {
+      font-size: 1rem;
+      color: #FFFFFF; }
+    .social-medias .purchase-text {
+      margin-left: 1em; } }
 .discover {
   display: flex;
   flex-direction: column;
