@@ -8,13 +8,13 @@
     background-size: cover;
     background-position: center;
 
-    h1 {
+    .discover__title {
         color: $main-red;
         font-size: 3.5rem;
         font-weight: bold;
     }
 
-    p {
+    .discover__paragraph {
         color: $white;
         font-size: 2.5rem;
         font-family: $ff-great;

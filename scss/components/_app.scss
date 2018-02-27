@@ -10,14 +10,14 @@
     margin: 0 auto;
     margin-top: 2em;
 
-    p {
+    .app__paragraph {
         font-size: 3vw;
         font-family: $ff-lato;
         color: $white;
         margin-top: 1em;
     }
 
-    h1 {
+    .app__title {
         font-size: 4vw;
         font-family: $ff-lato;
         color: $white;
@@ -26,11 +26,11 @@
 
 @media screen and (min-width: 300px) {
     .app {
-        h1 {
+        .app__title {
             font-size: calc(14px + (20 - 14) * (100vw - 300px) / (700 - 300));
         }
 
-        p {
+        .app__paragraph {
             text-align: center;
             font-size: calc(10px + (12 - 10) * (100vw - 300px) / (700 - 300));
             // min-fs + (max-fs - min-fs) * (100vw - min-ss) / (max-ss - min-ss)

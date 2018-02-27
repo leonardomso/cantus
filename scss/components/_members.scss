@@ -6,19 +6,19 @@
     margin: 0 auto;
     margin-top: 2.5em;
 
-    .vocal {
+    .members__vocal {
         background-image: url('../images/vocal.jpg');
         background-size: cover;
         background-position: center;
     }
 
-    .drum {
+    .members__drum {
         background-image: url('../images/drum.jpg');
         background-size: cover;
         background-position: center;
     }
 
-    .guiter {
+    .members__guiter {
         background-image: url('../images/guiter.jpg');
         background-size: cover;
         background-position: center;
@@ -29,7 +29,7 @@
     .members {
         grid-template-columns: 1fr;
 
-        .set-members {
+        .members__set {
             display: none;
         }
     }
@@ -39,17 +39,17 @@
     .members {
         grid-template-columns: repeat(2, 1fr);
 
-        .vocal {
+        .members__vocal {
             grid-column: 1 / 2;
             grid-row: 2 / 3;
         }
 
-        .drum {
+        .members__drum {
             grid-column: 2 / 3;
             grid-row: 2 / 3;
         }
 
-        .guiter {
+        .members__guiter {
             display: none;
         }
     }
@@ -59,21 +59,21 @@
     .members {
         grid-template-columns: repeat(3, 1fr);
 
-        .set-members {
+        .members__set {
             grid-column: 3 / 4;
         }
 
-        .vocal {
+        .members__vocal {
             grid-column: 1 / 2;
             grid-row: 2 / 3;
         }
 
-        .drum {
+        .members__drum {
             grid-column: 2 / 3;
             grid-row: 2 / 3;
         }
 
-        .guiter {
+        .members__guiter {
             display: block;
             grid-column: 3 / 4;
             grid-row: 2 / 3;

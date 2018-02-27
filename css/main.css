@@ -13,20 +13,26 @@ button {
   border-radius: 3em;
   border: none; }
 
-.discover-button {
+.discover__button {
   width: 15em;
   margin-top: 2em;
   color: #FFFFFF;
   background-color: #DF001F; }
 
-.title-column {
+.members__title--column,
+.conserts__title--column,
+.conserts__latest--title--column,
+.founder__title--column {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   color: #333333;
   font-size: 2.5rem;
   font-family: "Lato", sans-serif; }
 
-.subtitle-column {
+.members__title--subtitle--column,
+.conserts__title--subtitle--column,
+.conserts__videos--subtitle--column,
+.founder__subtitle-column {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   margin-top: 1.5em;
@@ -46,21 +52,19 @@ button {
     align-items: center;
     justify-content: center;
     background-size: cover; }
-    .menu .logo .logo-title {
+    .menu .logo .logo__img--title {
       font-family: "Great Vibes", cursive;
       color: #FFFFFF;
       font-size: 3rem;
       text-align: center; }
-  .menu .navigation {
+  .menu .menu__navigation {
     display: flex;
     align-content: center;
     justify-content: center; }
-    .menu .navigation .no-justify {
-      justify-content: flex-end; }
-    .menu .navigation .fa {
+    .menu .menu__navigation .fa {
       font-size: 2rem;
       color: #FFFFFF; }
-    .menu .navigation ul {
+    .menu .menu__navigation ul {
       list-style: none;
       display: flex;
       position: absolute;
@@ -68,10 +72,10 @@ button {
       flex-direction: column;
       font-size: 1rem;
       font-family: "Lato", sans-serif; }
-      .menu .navigation ul li {
+      .menu .menu__navigation ul li {
         padding: 10px; }
   @media screen and (min-width: 300px) {
-    .menu .social-medias {
+    .menu .social-media {
       display: none; } }
 
 @media screen and (min-width: 1100px) {
@@ -85,26 +89,26 @@ button {
   .fa {
     display: none; }
 
-  .social-medias {
+  .social-media {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     align-items: center;
     max-width: 85%;
     justify-self: center; }
-    .social-medias .facebook p,
-    .social-medias .twitter p,
-    .social-medias .gplus p {
+    .social-media .social-media__facebook p,
+    .social-media .social-media__twitter p,
+    .social-media .social-media__gplus p {
       font-family: "Lato", sans-serif;
       color: #FFFFFF;
       display: inline-block;
       margin-left: 1em;
       font-size: .8rem; }
-    .social-medias .facebook .fa,
-    .social-medias .twitter .fa,
-    .social-medias .gplus .fa {
+    .social-media .social-media__facebook .fa,
+    .social-media .social-media__twitter .fa,
+    .social-media .social-media__gplus .fa {
       font-size: 1rem;
       color: #FFFFFF; }
-    .social-medias .purchase-text {
+    .social-media .social-media__button {
       margin-left: 1em; } }
 .discover {
   display: flex;
@@ -115,11 +119,11 @@ button {
   background-image: url("../images/photo-guitar.jpeg");
   background-size: cover;
   background-position: center; }
-  .discover h1 {
+  .discover .discover__title {
     color: #DF001F;
     font-size: 3.5rem;
     font-weight: bold; }
-  .discover p {
+  .discover .discover__paragraph {
     color: #FFFFFF;
     font-size: 2.5rem;
     font-family: "Great Vibes", cursive; }
@@ -131,15 +135,15 @@ button {
   max-width: 75%;
   margin: 0 auto;
   margin-top: 2.5em; }
-  .members .vocal {
+  .members .members__vocal {
     background-image: url("../images/vocal.jpg");
     background-size: cover;
     background-position: center; }
-  .members .drum {
+  .members .members__drum {
     background-image: url("../images/drum.jpg");
     background-size: cover;
     background-position: center; }
-  .members .guiter {
+  .members .members__guiter {
     background-image: url("../images/guiter.jpg");
     background-size: cover;
     background-position: center; }
@@ -147,31 +151,31 @@ button {
 @media screen and (min-width: 300px) {
   .members {
     grid-template-columns: 1fr; }
-    .members .set-members {
+    .members .members__set {
       display: none; } }
 @media screen and (min-width: 620px) {
   .members {
     grid-template-columns: repeat(2, 1fr); }
-    .members .vocal {
+    .members .members__vocal {
       grid-column: 1 / 2;
       grid-row: 2 / 3; }
-    .members .drum {
+    .members .members__drum {
       grid-column: 2 / 3;
       grid-row: 2 / 3; }
-    .members .guiter {
+    .members .members__guiter {
       display: none; } }
 @media screen and (min-width: 940px) {
   .members {
     grid-template-columns: repeat(3, 1fr); }
-    .members .set-members {
+    .members .members__set {
       grid-column: 3 / 4; }
-    .members .vocal {
+    .members .members__vocal {
       grid-column: 1 / 2;
       grid-row: 2 / 3; }
-    .members .drum {
+    .members .members__drum {
       grid-column: 2 / 3;
       grid-row: 2 / 3; }
-    .members .guiter {
+    .members .members__guiter {
       display: block;
       grid-column: 3 / 4;
       grid-row: 2 / 3; } }
@@ -182,23 +186,23 @@ button {
   grid-gap: 1em;
   max-width: 75%;
   margin: 3em auto; }
-  .conserts aside {
+  .conserts .conserts__date--infos {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    .conserts aside p {
-      font-size: 0.8rem;
-      font-family: "Lato", sans-serif;
-      margin-top: 1em; }
-    .conserts aside h1 {
+    .conserts .conserts__date--infos .conserts__date--title {
       font-size: 1.5rem;
       font-family: "Lato", sans-serif;
       justify-content: flex-start; }
-  .conserts .video-player {
+    .conserts .conserts__date--infos p {
+      font-size: 0.8rem;
+      font-family: "Lato", sans-serif;
+      margin-top: 1em; }
+  .conserts .conserts__video--player {
     background-image: url("../images/video-photo.jpg");
     background-size: cover;
     background-position: center; }
-  .conserts .date-consert {
+  .conserts .conserts__date--consert {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,19 +216,19 @@ button {
 @media screen and (min-width: 300px) {
   .conserts {
     grid-template-columns: 1fr 3fr; }
-    .conserts h1, .conserts p {
+    .conserts .conserts__date--title, .conserts p {
       grid-column: 1 / 3; }
-    .conserts .latest,
-    .conserts .videos,
-    .conserts .set-videos {
+    .conserts .conserts__latest--title--column,
+    .conserts .conserts__videos--subtitle--column,
+    .conserts .set__set--video {
       display: none; } }
 @media screen and (min-width: 940px) {
   .conserts {
     grid-template-columns: 1fr 2fr 2fr; }
-    .conserts .date-consert {
+    .conserts .conserts__date--consert {
       grid-column: 1 / 2; }
-    .conserts .latest,
-    .conserts .videos {
+    .conserts .conserts__latest--title--column,
+    .conserts .conserts__videos--subtitle--column {
       display: block;
       grid-column: 3 / 4;
       justify-content: flex-end; } }
@@ -236,13 +240,13 @@ button {
   background-image: url("../images/founder-photo.jpg");
   background-position: center;
   background-size: cover; }
-  .founder h1,
-  .founder p {
+  .founder .founder__history--title,
+  .founder .founder__history--paragraph {
     color: #FFFFFF;
     font-family: "Lato", sans-serif; }
-  .founder button {
+  .founder .founder__history--button {
     width: 15em; }
-  .founder .founder-history {
+  .founder .founder__history {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -250,47 +254,47 @@ button {
     margin-left: 1em; }
 
 @media screen and (min-width: 300px) {
-  .founder h1 {
+  .founder .founder__history--title {
     font-size: 1.5rem; }
-  .founder p {
+  .founder .founder__history--paragraph {
     font-size: 0.8rem;
     margin-top: 1em; } }
-.popular-instagram {
+.founder__popular--instagram {
   display: grid;
   grid-template-rows: 3fr 1fr;
   max-width: 75%;
   margin: 0 auto;
   margin-top: 3em; }
-  .popular-instagram .popular-songs .subtitle-column {
+  .founder__popular--instagram .founder__popular--songs .subtitle-column {
     margin-top: 0; }
-  .popular-instagram .title-song {
+  .founder__popular--instagram .founder__title--song {
     font-size: 0.8rem;
     font-family: "Lato", sans-serif;
     margin-top: 2em; }
-  .popular-instagram figure {
+  .founder__popular--instagram figure {
     width: 7em;
     height: 6em;
     margin-top: 1em;
     justify-self: center; }
 
 @media screen and (min-width: 300px) {
-  .popular-instagram {
+  .founder__popular--instagram {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr; }
-    .popular-instagram .instagram {
+    .founder__popular--instagram .founder__instagram {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto 1fr 1fr;
       grid-row: 2 / 3; }
-      .popular-instagram .instagram .title-column,
-      .popular-instagram .instagram .subtitle-column {
+      .founder__popular--instagram .founder__instagram .founder__title--column,
+      .founder__popular--instagram .founder__instagram .founder__subtitle--column {
         grid-column: 1 / 3;
         grid-row: 1 / 2; } }
 @media screen and (min-width: 540px) {
-  .popular-instagram {
+  .founder__popular--instagram {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr; }
-    .popular-instagram .instagram {
+    .founder__popular--instagram .founder__instagram {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       margin-top: 0; } }
@@ -305,20 +309,20 @@ button {
   background-size: cover;
   margin: 0 auto;
   margin-top: 2em; }
-  .app p {
+  .app .app__paragraph {
     font-size: 3vw;
     font-family: "Lato", sans-serif;
     color: #FFFFFF;
     margin-top: 1em; }
-  .app h1 {
+  .app .app__title {
     font-size: 4vw;
     font-family: "Lato", sans-serif;
     color: #FFFFFF; }
 
 @media screen and (min-width: 300px) {
-  .app h1 {
+  .app .app__title {
     font-size: calc(14px + (20 - 14) * (100vw - 300px) / (700 - 300)); }
-  .app p {
+  .app .app__paragraph {
     text-align: center;
     font-size: calc(10px + (12 - 10) * (100vw - 300px) / (700 - 300)); } }
 .subscribe {
@@ -328,10 +332,10 @@ button {
   margin-top: 3em;
   align-items: center;
   justify-content: center; }
-  .subscribe h1 {
+  .subscribe .subscribe__title {
     font-size: 2vw;
     color: #333333; }
-    .subscribe h1::after {
+    .subscribe .subscribe__title::after {
       content: '';
       height: 4px;
       width: 100%;
@@ -340,29 +344,29 @@ button {
       display: block; }
 
 @media screen and (min-width: 300px) {
-  .subscribe h1 {
+  .subscribe .subscribe__title {
     font-size: calc(18px + (20 - 18) * (100vw - 300px) / (640 - 300)); } }
-.footer-cantus .footer-navigation {
+.footer .footer__navigation {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 2em 0 2em; }
-  .footer-cantus .footer-navigation li {
+  .footer .footer__navigation li {
     display: inline-block;
     font-size: calc(12px + (14 - 12) * (100vw - 300px) / (640 - 300));
     color: #333333;
     font-family: "Lato", sans-serif; }
-.footer-cantus p {
+.footer .footer_paragraph {
   font-size: calc(10px + (12 - 10) * (100vw - 300px) / (640 - 300));
   color: #333333;
   font-family: "Lato", sans-serif;
   text-align: center;
   margin-bottom: 2em; }
-  .footer-cantus p span {
+  .footer .footer_paragraph span {
     font-family: "Great Vibes", cursive;
     color: #DF001F;
     font-size: calc(12px + (14 - 12) * (100vw - 300px) / (640 - 300)); }
-.footer-cantus::before {
+.footer::before {
   content: '';
   display: block;
   width: 100%;

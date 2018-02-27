@@ -12,7 +12,7 @@
         justify-content: center;
         background-size: cover;
 
-        .logo-title {
+        .logo__img--title {
             font-family: $ff-great;
             color: $white;
             font-size: 3rem;
@@ -20,14 +20,10 @@
         }
     }
 
-    .navigation {
+    .menu__navigation {
         display: flex;
         align-content: center;
         justify-content: center;
-
-        .no-justify {
-            justify-content: flex-end;
-        }
 
         .fa {
             font-size: 2rem;
@@ -49,7 +45,7 @@
         }
     }
 
-    .social-medias {
+    .social-media {
         @media screen and (min-width: 300px) {
             display: none;
         }
@@ -69,16 +65,16 @@
         display: none;
     }
 
-    .social-medias {
+    .social-media {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 2fr;
         align-items: center;
         max-width: 85%;
         justify-self: center;
 
-        .facebook,
-        .twitter,
-        .gplus {
+        .social-media__facebook,
+        .social-media__twitter,
+        .social-media__gplus {
             p {
                 font-family: $ff-lato;
                 color: $white;
@@ -93,7 +89,7 @@
             }
         }
 
-        .purchase-text {
+        .social-media__button {
             margin-left: 1em;
         }
     }

@@ -7,17 +7,17 @@
     background-position: center;
     background-size: cover;
 
-    h1,
-    p {
+    .founder__history--title,
+    .founder__history--paragraph {
         color: $white;
         font-family: $ff-lato;
     }
 
-    button {
+    .founder__history--button {
         width: 15em;
     }
 
-    .founder-history {
+    .founder__history {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -28,11 +28,11 @@
 
 @media screen and (min-width: 300px) {
     .founder {
-        h1 {
+        .founder__history--title {
             font-size: 1.5rem;
         }
 
-        p {
+        .founder__history--paragraph {
             font-size: 0.8rem;
             margin-top: 1em;
         }

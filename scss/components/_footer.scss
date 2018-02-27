@@ -1,5 +1,5 @@
-.footer-cantus {
-    .footer-navigation {
+.footer {
+    .footer__navigation {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -13,7 +13,7 @@
         }
     }
 
-    p {
+    .footer_paragraph {
         font-size: calc(10px + (12 - 10) * (100vw - 300px) / (640 - 300));
         color: $main-gray;
         font-family: $ff-lato;

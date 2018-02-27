@@ -1,17 +1,17 @@
-.popular-instagram {
+.founder__popular--instagram {
     display: grid;
     grid-template-rows: 3fr 1fr;
     max-width: 75%;
     margin: 0 auto;
     margin-top: 3em;
 
-    .popular-songs {
+    .founder__popular--songs {
         .subtitle-column {
             margin-top: 0;
         }
     }
 
-    .title-song {
+    .founder__title--song {
         font-size: 0.8rem;
         font-family: $ff-lato;
         margin-top: 2em;
@@ -26,18 +26,18 @@
 }
 
 @media screen and (min-width: 300px) {
-    .popular-instagram {
+    .founder__popular--instagram {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
 
-        .instagram {
+        .founder__instagram {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: auto 1fr 1fr;
             grid-row: 2 / 3;
-            
-            .title-column,
-            .subtitle-column {
+
+            .founder__title--column,
+            .founder__subtitle--column {
                 grid-column: 1 / 3;
                 grid-row: 1 / 2;
             }
@@ -46,11 +46,11 @@
 }
 
 @media screen and (min-width: 540px) {
-    .popular-instagram {
+    .founder__popular--instagram {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
 
-        .instagram {
+        .founder__instagram {
             grid-column: 2 / 3;
             grid-row: 1 / 2;
             margin-top: 0;

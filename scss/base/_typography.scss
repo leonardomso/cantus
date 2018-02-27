@@ -15,14 +15,17 @@ button {
     border: none;
 }
 
-.discover-button {
+.discover__button {
     width: 15em;
     margin-top: 2em;
     color: $white;
     background-color: $main-red;
 }
 
-.title-column {
+.members__title--column,
+.conserts__title--column,
+.conserts__latest--title--column,
+.founder__title--column {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     color: $main-gray;
@@ -30,7 +33,10 @@ button {
     font-family: $ff-lato;
 }
 
-.subtitle-column {
+.members__title--subtitle--column,
+.conserts__title--subtitle--column,
+.conserts__videos--subtitle--column,
+.founder__subtitle-column {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     margin-top: 1.5em;
