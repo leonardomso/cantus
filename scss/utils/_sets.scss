@@ -1,10 +1,10 @@
-.set {
+.set__set--video {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
 
-    .set-left,
-    .set-right {
+    .set__set--left,
+    .set__set--right {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -18,15 +18,15 @@
 }
 
 @media screen and (min-width: 300px) {
-    .set-members,
-    .set-video {
+    .members__set,
+    .set__set--video {
         display: none;
     }
 }
 
 @media screen and (min-width: 940px) {
-    .set-members,
-    .set-video {
+    .members__set,
+    .set__set--video  {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
     }
