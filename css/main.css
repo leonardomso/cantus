@@ -61,55 +61,30 @@ button {
   .menu .menu__icon {
     grid-column: 1 / 2;
     display: flex;
-    justify-content: center; }
-    .menu .menu__icon .fa {
-      font-size: 2rem;
-      color: #FFFFFF; }
-  .menu ul {
+    justify-content: center;
+    font-size: 2rem;
+    color: #FFFFFF; }
+  .menu .menu__navigation {
     list-style: none;
     display: none;
     position: fixed;
     flex-direction: column;
     font-size: 1rem;
     font-family: "Lato", sans-serif; }
-    .menu ul li {
-      padding: 10px; }
-  @media screen and (min-width: 300px) {
-    .menu .social-media {
-      display: none; } }
-
-@media screen and (min-width: 1100px) {
-  li {
-    display: inline-block;
-    padding-left: 0.9em;
-    font-size: 0.9rem;
-    font-family: "Lato", sans-serif;
-    color: #FFFFFF; }
-
-  .fa {
-    display: none; }
-
-  .social-media {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
-    align-items: center;
-    max-width: 85%;
-    justify-self: center; }
-    .social-media .social-media__facebook p,
-    .social-media .social-media__twitter p,
-    .social-media .social-media__gplus p {
+    .menu .menu__navigation li {
+      padding: 10px;
       font-family: "Lato", sans-serif;
       color: #FFFFFF;
-      display: inline-block;
-      margin-left: 1em;
-      font-size: .8rem; }
-    .social-media .social-media__facebook .fa,
-    .social-media .social-media__twitter .fa,
-    .social-media .social-media__gplus .fa {
-      font-size: 1rem;
-      color: #FFFFFF; }
-    .social-media .social-media__button {
-      margin-left: 1em; } }
+      font-size: 0.9rem; }
+
+@media screen and (min-width: 1100px) {
+  .menu__navigation {
+    display: flex;
+    flex-direction: row;
+    position: fixed; }
+
+  .menu__icon {
+    display: none; } }
 .discover {
   display: flex;
   flex-direction: column;

@@ -5,7 +5,8 @@ const logo = document.querySelector('.logo');
 icon.addEventListener('click', showMenu, false);
 
 function showMenu(e) {
-    console.log(e.target)
+    logo.style.display = 'none';
+    icon.style.gridColumn = '2 / 3';
 };
 
 function setOn() {
