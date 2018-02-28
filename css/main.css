@@ -48,6 +48,7 @@ button {
   grid-template-columns: 2fr 1fr 2fr;
   align-items: center; }
   .menu .logo {
+    grid-column: 2 / 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,20 +56,20 @@ button {
     .menu .logo .logo__img--title {
       font-family: "Great Vibes", cursive;
       color: #FFFFFF;
-      font-size: 3rem;
+      font-size: calc(32px + (36 - 32) * (100vw - 300px) / (640 - 300));
       text-align: center; }
   .menu .menu__navigation {
+    grid-column: 1 / 2;
     display: flex;
-    align-content: center;
+    align-items: flex-start;
     justify-content: center; }
     .menu .menu__navigation .fa {
       font-size: 2rem;
       color: #FFFFFF; }
     .menu .menu__navigation ul {
       list-style: none;
-      display: flex;
-      position: absolute;
-      margin-left: -44px;
+      display: none;
+      position: fixed;
       flex-direction: column;
       font-size: 1rem;
       font-family: "Lato", sans-serif; }
