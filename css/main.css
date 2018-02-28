@@ -58,23 +58,22 @@ button {
       color: #FFFFFF;
       font-size: calc(32px + (36 - 32) * (100vw - 300px) / (640 - 300));
       text-align: center; }
-  .menu .menu__navigation {
+  .menu .menu__icon {
     grid-column: 1 / 2;
     display: flex;
-    align-items: flex-start;
     justify-content: center; }
-    .menu .menu__navigation .fa {
+    .menu .menu__icon .fa {
       font-size: 2rem;
       color: #FFFFFF; }
-    .menu .menu__navigation ul {
-      list-style: none;
-      display: none;
-      position: fixed;
-      flex-direction: column;
-      font-size: 1rem;
-      font-family: "Lato", sans-serif; }
-      .menu .menu__navigation ul li {
-        padding: 10px; }
+  .menu ul {
+    list-style: none;
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif; }
+    .menu ul li {
+      padding: 10px; }
   @media screen and (min-width: 300px) {
     .menu .social-media {
       display: none; } }

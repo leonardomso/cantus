@@ -21,28 +21,27 @@
         }
     }
 
-    .menu__navigation {
+    .menu__icon {
         grid-column: 1 / 2;
         display: flex;
-        align-items: flex-start;
         justify-content: center;
 
         .fa {
             font-size: 2rem;
             color: $white;
         }
+    }
 
-        ul {
-            list-style: none;
-            display: none;
-            position: fixed;
-            flex-direction: column;
-            font-size: 1rem;
-            font-family: $ff-lato;
+    ul {
+        list-style: none;
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        font-size: 1rem;
+        font-family: $ff-lato;
 
-            li {
-                padding: 10px;
-            }
+        li {
+            padding: 10px;
         }
     }
 
