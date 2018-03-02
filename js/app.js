@@ -8,11 +8,3 @@ function showMenu(e) {
     logo.style.display = 'none';
     icon.style.gridColumn = '2 / 3';
 };
-
-function setOn() {
-    navigation.setAttribute('style', 'justify-content: flex-end;');
-}
-
-function setOff() {
-    navigation.setAttribute('style', 'justify-content: center;');
-}
